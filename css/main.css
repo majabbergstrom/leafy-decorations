@@ -6,15 +6,16 @@ html {
   background-color: #588477;
   border-bottom: 3px solid #2d5a4d;
   border-top: 3px solid #2d5a4d;
-  background-image: url("../www/images/leaf-bg.svg");
-  background-size: 80px auto;
-  background-repeat: repeat-x, repeat-x, repeat;
+  background-image: url("../images/leaf-bg.svg");
+  background-size: 64px, auto;
+  background-repeat: repeat;
   background-position: left top, left bottom, left top;
 }
 
 .logo {
   text-align: center;
   color: #fff;
+  font-weight: bolder;
 }
 
 .nav {
@@ -22,28 +23,84 @@ html {
 }
 
 .nav a {
+  font-weight: 500;
   text-decoration: none;
   color: #fff;
   background-color: #467366;
   border: 3px solid #2d5a4d;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .nav a:hover {
-
+  color: #145b1d;
+  background-color: #fff;
+  background-image: url("../images/leaf-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 48px;
 }
 
 .banner {
-  position: relative;
+  background-image: url("../images/banner.jpg");
+  background-size: 810px, auto;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .banner-content {
-  position: absolute;
-  bottom: 0;
+  background:
+    url("../images/two-leaves.svg") no-repeat .75em 41% / 100px auto,
+    linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) no-repeat center center / 1000px auto;
+  padding-top: 18.8em;
+  border-bottom: 3px solid #2d5a4d;
+  font-weight: 500;
   color: #fff;
 }
 
+@media only screen and (min-width: 25em) {
+
+  .banner {
+    background-size: 776px, auto;
+  }
+
+  .banner-content {
+    background:
+      url("../images/two-leaves.svg") no-repeat .75em 45% / 100px auto,
+      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) no-repeat center center / 1000px auto;
+    padding-top: 18.8em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .banner {
+    background-size: 910px, auto;
+  }
+
+  .banner-content {
+    background:
+      url("../images/two-leaves.svg") no-repeat .75em 40% / 100px auto,
+      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 80%) no-repeat center center / 1000px auto;
+    padding-top: 17em;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
+
+  .banner-content {
+    background:
+      url("../images/two-leaves.svg") no-repeat .75em 50% / 100px auto,
+      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) no-repeat center center / 1000px auto;
+    padding-top: 16em;
+
+  }
+
+  .banner {
+    background-size: 960px auto;
+    background-position: center bottom;
+  }
 
   .logo {
     text-align: left;
@@ -51,6 +108,21 @@ html {
 
   .nav {
     text-align: right;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    background:
+      url("../images/banner.jpg") no-repeat left bottom / 1440px auto,
+      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) repeat center center / 1440px auto;
+  }
+
+  .banner-content {
+    background: url("../images/two-leaves.svg") no-repeat .75em 42% / 100px auto;
+    padding-top: 14.4em;
   }
 
 }
