@@ -45,6 +45,7 @@ html {
   background-size: 810px, auto;
   background-repeat: no-repeat;
   background-position: top center;
+  border-bottom: 3px solid #2d5a4d;
 }
 
 .banner-content {
@@ -52,7 +53,6 @@ html {
     url("../images/two-leaves.svg") no-repeat .75em 41% / 100px auto,
     linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) no-repeat center center / 1000px auto;
   padding-top: 18.8em;
-  border-bottom: 3px solid #2d5a4d;
   font-weight: 500;
   color: #fff;
 }
@@ -92,7 +92,7 @@ html {
   .banner-content {
     background:
       url("../images/two-leaves.svg") no-repeat .75em 50% / 100px auto,
-      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) no-repeat center center / 1000px auto;
+      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) no-repeat center center / 1440px auto;
     padding-top: 16em;
 
   }
@@ -115,13 +115,14 @@ html {
 @media only screen and (min-width: 90em) {
 
   .banner {
-    background:
-      url("../images/banner.jpg") no-repeat left bottom / 1440px auto,
-      linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%) repeat center center / 1440px auto;
+    background-image: linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 70%), url("../images/banner.jpg");
+    background-size: 1440px auto, 1440px auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, bottom center;
   }
 
   .banner-content {
-    background: url("../images/two-leaves.svg") no-repeat .75em 42% / 100px auto;
+    background: url("../images/two-leaves.svg") no-repeat .75em 43% / 100px auto;
     padding-top: 14.4em;
   }
 
