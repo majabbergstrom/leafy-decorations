@@ -4,10 +4,12 @@ html {
 
 .masthead {
   background-color: #588477;
+  border-bottom: 3px solid #2d5a4d;
+  border-top: 3px solid #2d5a4d;
   background-image: url("../www/images/leaf-bg.svg");
+  background-size: 80px auto;
   background-repeat: repeat-x, repeat-x, repeat;
   background-position: left top, left bottom, left top;
-
 }
 
 .logo {
@@ -32,11 +34,13 @@ html {
 }
 
 .banner {
-
+  position: relative;
 }
 
 .banner-content {
-
+  position: absolute;
+  bottom: 0;
+  color: #fff;
 }
 
 @media only screen and (min-width: 60em) {
